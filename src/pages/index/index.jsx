@@ -17,7 +17,7 @@ class Meeting extends React.Component {
     if (!this.appId) {
       return alert('Get App ID first!')
     }
-    this.uid = undefined
+    this.uid = this.props.match.params.uid
   }
 
   render() {

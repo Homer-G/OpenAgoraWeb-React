@@ -10,7 +10,11 @@ class App extends Component {
     return (
       <Router>
         <div className="full">
-          <Route exact path="/" component={Index} />
+          <Route path="/:uid" 
+          render={(props) => (
+            <Index {...props} />
+          )}
+          />
         </div>
       </Router>
     )
